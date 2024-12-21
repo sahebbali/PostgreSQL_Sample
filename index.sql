@@ -22,3 +22,12 @@ SELECT * FROM employees WHERE dept = 'IT';
 
 -- delete recored
 DELETE FROM employees WHERE emp_id = 1;
+-- and operator
+SELECT * FROM employees
+WHERE
+salary >=40000 AND salary <=65000
+
+-- BETWEEN KeyWord
+SELECT * FROM employees
+WHERE
+salary BETWEEN 40000 AND 65000;
