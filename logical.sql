@@ -33,6 +33,14 @@ SELECT * FROM employees ORDER BY dept DESC, fname DESC;
 SELECT * FROM employees LIMIT 3;
 
 -- LIKE keyword
-The query selects all employees whose department (dept) contains the substring "Acc". This is useful when you want to find departments like "Accounting," "Accounts," or "Accreditation."
+-- The query selects all employees whose department (dept) contains the substring "Acc". This is useful when you want to find departments like "Accounting," "Accounts," or "Accreditation."
+-- Starts with 'A': LIKE 'A%'
+-- Ends with 'A': LIKE '%A'
+-- Contains 'A': LIKE '%A%'
+-- Second character is 'A': LIKE '
+-- _
+-- A%'
+-- Case-insensitive contains 'john': ILIKE '%john%
+
 SELECT * FROM employees
 WHERE dept LIKE '%IT%';
